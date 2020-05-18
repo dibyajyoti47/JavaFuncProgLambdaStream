@@ -15,14 +15,10 @@ public class FPO1Structured {
 			System.out.println(number);
 		}
 	}
-	
-	private static void print (int number) {
-		System.out.println(number);
-	}
-	
+		
 	private static void printAllNumbersInFunctionalApproach(List<Integer> numbers) {
-		numbers.stream()
-			.forEach(System.out :: println);
+		numbers.stream()  //creating a stream
+			.forEach(System.out :: println); //method reference
 	}
 
 }
